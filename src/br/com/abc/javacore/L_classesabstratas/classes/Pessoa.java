@@ -1,4 +1,4 @@
-package br.com.abc.javacore.L_classesabstratas;
+package br.com.abc.javacore.L_classesabstratas.classes;
 
 public abstract class Pessoa {
     protected String nome;

@@ -1,7 +1,5 @@
 package br.com.abc.javacore.L_classesabstratas.classes;
 
-import br.com.abc.javacore.L_classesabstratas.Pessoa;
-
 public abstract class Funcionario extends Pessoa { //Não pode ser instaciada, apenas extendida
     protected String clt;
     protected double salario;
