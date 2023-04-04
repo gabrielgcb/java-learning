@@ -1,4 +1,4 @@
-package br.com.abc.poocursoemvideo.Heranca.classes;
+package br.com.abc.poocursoemvideo.D_Heranca.classes;
 
 public class Professor extends Pessoa {
     private String especialidade;

@@ -1,7 +1,7 @@
-package br.com.abc.poocursoemvideo.E_exerciciopratico.teste;
+package br.com.abc.poocursoemvideo.C_relacionamentoentreclasses.vamospraticar.teste;
 
-import br.com.abc.poocursoemvideo.E_exerciciopratico.classes.Livro;
-import br.com.abc.poocursoemvideo.E_exerciciopratico.classes.Pessoa;
+import br.com.abc.poocursoemvideo.C_relacionamentoentreclasses.vamospraticar.classes.Livro;
+import br.com.abc.poocursoemvideo.C_relacionamentoentreclasses.vamospraticar.classes.Pessoa;
 
 public class LeitorTeste {
     public static void main(String[] args) {

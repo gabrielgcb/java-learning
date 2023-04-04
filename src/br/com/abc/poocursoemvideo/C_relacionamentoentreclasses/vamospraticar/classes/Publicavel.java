@@ -1,4 +1,4 @@
-package br.com.abc.poocursoemvideo.E_exerciciopratico.classes;
+package br.com.abc.poocursoemvideo.C_relacionamentoentreclasses.vamospraticar.classes;
 
 public interface Publicavel {
     public abstract void abrir();

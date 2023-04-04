@@ -1,9 +1,9 @@
-package br.com.abc.poocursoemvideo.E_exerciciopratico.classes;
+package br.com.abc.poocursoemvideo.D_Herancaparte2.classes;
 
-public class Pessoa {
-    private String nome;
-    private int idade;
-    private char sexo;
+public abstract class Pessoa {
+    protected String nome;
+    protected int idade;
+    protected char sexo;
 
     public Pessoa(String nome, int idade, char sexo) {
         this.nome = nome;
@@ -25,7 +25,7 @@ public class Pessoa {
     }
 
     public String getNome() {
-        return this.nome;
+        return nome;
     }
 
     public void setNome(String nome) {
@@ -33,7 +33,7 @@ public class Pessoa {
     }
 
     public int getIdade() {
-        return this.idade;
+        return idade;
     }
 
     public void setIdade(int idade) {
@@ -41,11 +41,10 @@ public class Pessoa {
     }
 
     public char getSexo() {
-        return this.sexo;
+        return sexo;
     }
 
     public void setSexo(char sexo) {
         this.sexo = sexo;
     }
-
 }

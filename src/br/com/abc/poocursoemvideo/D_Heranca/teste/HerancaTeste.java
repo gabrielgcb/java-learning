@@ -1,8 +1,8 @@
-package br.com.abc.poocursoemvideo.Heranca.teste;
+package br.com.abc.poocursoemvideo.D_Heranca.teste;
 
-import br.com.abc.poocursoemvideo.Heranca.classes.Aluno;
-import br.com.abc.poocursoemvideo.Heranca.classes.Funcionario;
-import br.com.abc.poocursoemvideo.Heranca.classes.Professor;
+import br.com.abc.poocursoemvideo.D_Heranca.classes.Aluno;
+import br.com.abc.poocursoemvideo.D_Heranca.classes.Funcionario;
+import br.com.abc.poocursoemvideo.D_Heranca.classes.Professor;
 
 public class HerancaTeste {
     public static void main(String... args) {

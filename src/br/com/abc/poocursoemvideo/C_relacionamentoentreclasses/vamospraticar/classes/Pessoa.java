@@ -1,6 +1,6 @@
-package br.com.abc.poocursoemvideo.Heranca.classes;
+package br.com.abc.poocursoemvideo.C_relacionamentoentreclasses.vamospraticar.classes;
 
-public abstract class Pessoa {
+public class Pessoa {
     private String nome;
     private int idade;
     private char sexo;
@@ -11,12 +11,21 @@ public abstract class Pessoa {
         this.sexo = sexo;
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo=" + sexo +
+                '}';
+    }
+
     public void fazerAniversario() {
         this.idade += 1;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public void setNome(String nome) {
@@ -24,7 +33,7 @@ public abstract class Pessoa {
     }
 
     public int getIdade() {
-        return idade;
+        return this.idade;
     }
 
     public void setIdade(int idade) {
@@ -32,10 +41,11 @@ public abstract class Pessoa {
     }
 
     public char getSexo() {
-        return sexo;
+        return this.sexo;
     }
 
     public void setSexo(char sexo) {
         this.sexo = sexo;
     }
+
 }
