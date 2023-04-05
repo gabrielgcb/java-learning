@@ -2,7 +2,7 @@ package br.com.abc.poocursoemvideo.E_polimorfismo.classes;
 
 public abstract class Reptil extends Animal {
 
-    private String corEscama;
+    protected String corEscama;
 
     public Reptil(float peso, int idade, int membros, String corEscama) {
         super(peso, idade, membros);

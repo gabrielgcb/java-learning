@@ -2,7 +2,7 @@ package br.com.abc.poocursoemvideo.E_polimorfismo.classes;
 
 public abstract class Peixe extends Animal {
 
-    private String corEscama;
+    protected String corEscama;
 
     public Peixe(float peso, int idade, int membros, String corEscama) {
         super(peso, idade, membros);

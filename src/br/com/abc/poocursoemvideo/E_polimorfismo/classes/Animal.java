@@ -1,9 +1,9 @@
 package br.com.abc.poocursoemvideo.E_polimorfismo.classes;
 
 public abstract class Animal {
-    private float peso;
-    private int idade;
-    private int membros;
+    protected float peso;
+    protected int idade;
+    protected int membros;
 
     public Animal(float peso, int idade, int membros) {
         this.peso = peso;
