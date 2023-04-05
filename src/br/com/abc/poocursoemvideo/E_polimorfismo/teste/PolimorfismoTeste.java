@@ -1,4 +1,6 @@
-package br.com.abc.poocursoemvideo.E_polimorfismo.classes;
+package br.com.abc.poocursoemvideo.E_polimorfismo.teste;
+
+import br.com.abc.poocursoemvideo.E_polimorfismo.classes.*;
 
 public class PolimorfismoTeste {
     public static void main(String[] args) {
