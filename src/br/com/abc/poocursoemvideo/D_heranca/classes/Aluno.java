@@ -1,4 +1,4 @@
-package br.com.abc.poocursoemvideo.D_Heranca.classes;
+package br.com.abc.poocursoemvideo.D_heranca.classes;
 
 public class Aluno extends Pessoa {
     private String matricula;

@@ -1,4 +1,4 @@
-package br.com.abc.poocursoemvideo.D_Herancaparte2.classes;
+package br.com.abc.poocursoemvideo.D_herancaparte2.classes;
 
 public class Tecnico extends Aluno{
 

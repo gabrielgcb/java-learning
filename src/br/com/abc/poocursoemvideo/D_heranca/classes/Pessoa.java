@@ -1,4 +1,4 @@
-package br.com.abc.poocursoemvideo.D_Heranca.classes;
+package br.com.abc.poocursoemvideo.D_heranca.classes;
 
 public abstract class Pessoa {
     private String nome;

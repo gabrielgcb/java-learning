@@ -1,4 +1,4 @@
-package br.com.abc.poocursoemvideo.D_Heranca.classes;
+package br.com.abc.poocursoemvideo.D_herancaparte2.classes;
 
 public class Professor extends Pessoa {
     private String especialidade;
@@ -12,17 +12,16 @@ public class Professor extends Pessoa {
 
     @Override
     public String toString() {
-        return "Professor{" +
-                "nome='" + super.getNome() + '\'' +
-                ", idade='" + super.getIdade() + '\'' +
-                ", sexo='" + super.getSexo() + '\'' +
-                ", especialidade='" + this.especialidade + '\'' +
+        return super.toString() +
+                " Professor{" +
+                "especialidade='" + this.especialidade + '\'' +
                 ", salario=" + this.salario +
-                '}';
+                "} ";
     }
 
-    public void receberAumento(float aumento) {
-        this.salario += aumento;
+    public void receberAumento(float acrescimoSalario) {
+        this.salario += acrescimoSalario;
+        System.out.println("---------- @SUCESSO, O SALARIO DO(a) PROFESSOR(a) " + this.nome + " RECEBEU UM AUMENTO (+"+acrescimoSalario+")");
     }
 
     public String getEspecialidade() {

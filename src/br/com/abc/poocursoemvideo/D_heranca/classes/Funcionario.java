@@ -1,4 +1,4 @@
-package br.com.abc.poocursoemvideo.D_Heranca.classes;
+package br.com.abc.poocursoemvideo.D_heranca.classes;
 
 public class Funcionario extends Pessoa {
     private String setor;
