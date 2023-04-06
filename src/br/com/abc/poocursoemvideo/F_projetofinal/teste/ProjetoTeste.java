@@ -1,4 +1,8 @@
-package br.com.abc.poocursoemvideo.F_projetofinal.classes;
+package br.com.abc.poocursoemvideo.F_projetofinal.teste;
+
+import br.com.abc.poocursoemvideo.F_projetofinal.classes.Gafanhoto;
+import br.com.abc.poocursoemvideo.F_projetofinal.classes.Video;
+import br.com.abc.poocursoemvideo.F_projetofinal.classes.Visualizacao;
 
 public class ProjetoTeste {
     public static void main(String[] args) {
