@@ -1,4 +1,4 @@
-package br.com.abc.javacore.O_exception.teste.runtime;
+package br.com.abc.javacore.O_exception.runtime;
 
 public class RuntimeExceptionTeste01 {
     public static void main(String[] args) {
