@@ -24,7 +24,18 @@ public class WrapperTeste01 {
         Boolean booleanW = false;
 
         int i = intW; // unboxing
-        int i2 = Integer.parseInt("1");
-        System.out.println(i2);
+        Integer intW2 = Integer.parseInt("1");
+        System.out.println(intW2);
+        boolean verdadeiro = Boolean.parseBoolean("TruE");
+        System.out.println(verdadeiro);
+
+        System.out.println(Character.isDigit('A'));
+        System.out.println(Character.isDigit('2'));
+        System.out.println(Character.isLetterOrDigit('+'));
+        System.out.println(Character.isUpperCase('g'));
+        System.out.println(Character.isLowerCase('!'));
+        System.out.println(Character.toLowerCase('G'));
+        System.out.println(Character.toUpperCase('a'));
+
     }
 }
