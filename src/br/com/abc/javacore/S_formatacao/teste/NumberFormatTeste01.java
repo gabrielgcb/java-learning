@@ -18,6 +18,5 @@ public class NumberFormatTeste01 {
             System.out.println(numberFormat.format(valor));
         }
 
-
     }
 }
