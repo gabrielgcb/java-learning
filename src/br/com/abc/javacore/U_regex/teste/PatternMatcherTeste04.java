@@ -15,7 +15,7 @@ public class PatternMatcherTeste04 {
         
         String regex = "0[xX][0-9a-fA-F]";
         String texto = "12 0x 0X 0xFFABC 0z109 0x1"; // validando se um numero em hexadecimal é válido
-        Pattern pattern = Pattern.compile(regex); //vai compilar a expressao regular e procurar todos os ab no texto
+        Pattern pattern = Pattern.compile(regex); //vai compilar a expressao regular e procurar todos os regex no texto
         Matcher matcher = pattern.matcher(texto);//o padrao vai casar com o texto, e vai retonar o matcher
         System.out.println("texto:  " + texto);
         System.out.println("indice: 0123456789");
