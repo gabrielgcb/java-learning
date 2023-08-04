@@ -1,7 +1,5 @@
 package br.com.abc.poocursoemvideo.C_relacionamentoentreclasses.classes;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class Lutador {
     private String nome;
     private String nacionalidade;
