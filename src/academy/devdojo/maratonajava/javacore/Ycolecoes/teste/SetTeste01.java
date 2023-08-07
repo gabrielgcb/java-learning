@@ -3,7 +3,6 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.teste;
 import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Filme;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SetTeste01 {

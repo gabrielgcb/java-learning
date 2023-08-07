@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Wnio.teste;
+package academy.devdojo.maratonajava.javacore.teste;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

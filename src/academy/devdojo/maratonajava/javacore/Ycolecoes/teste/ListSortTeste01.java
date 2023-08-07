@@ -2,10 +2,6 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.teste;
 
 import academy.devdojo.maratonajava.javacore.Ycolecoes.dominio.Filme;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class ListSortTeste01 {
     public static void main(String[] args) {
 

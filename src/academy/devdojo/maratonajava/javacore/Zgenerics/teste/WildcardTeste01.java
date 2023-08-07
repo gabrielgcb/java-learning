@@ -1,6 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Zgenerics.teste;
 
-import java.util.ArrayList;
 import java.util.List;
 
 abstract class Animal {
