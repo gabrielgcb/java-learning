@@ -6,10 +6,16 @@ public class Quadrinhos {
 
     private String titulo;
     private double price;
+    private Category category;
 
     public Quadrinhos(String titulo, double price) {
         this.titulo = titulo;
         this.price = price;
+    }
+
+    public Quadrinhos(String titulo, double price, Category category) {
+        this(titulo, price);
+        this.category = category;
     }
 
     @Override
@@ -17,6 +23,7 @@ public class Quadrinhos {
         return "Quadrinhos{" +
                 "titulo='" + titulo + '\'' +
                 ", price=" + price +
+                ", category=" + category +
                 '}';
     }
 
@@ -39,5 +46,9 @@ public class Quadrinhos {
 
     public double getPrice() {
         return price;
+    }
+
+    public Category getCategory() {
+        return category;
     }
 }
