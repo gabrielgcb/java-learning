@@ -1,15 +1,18 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.teste;
 
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Category;
+import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Quadrinhos;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
-public class StreamTeste12 {
+import static academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion.NORMAL_PRICE;
+import static academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion.UNDER_PROMOTION;
+import static java.util.stream.Collectors.groupingBy;
+
+public class StreamTeste14 {
     private static final List<Quadrinhos> quadrinhosList = Arrays.asList(
             new Quadrinhos("O Espetacular Homem-Aranha", 9.99, Category.DRAMA),
             new Quadrinhos("Quarteto Fantástico", 11.49, Category.FANTASY),
@@ -22,11 +25,14 @@ public class StreamTeste12 {
 
     public static void main(String[] args) {
 
-        quadrinhosList.stream().collect(Collectors.groupingBy(Quadrinhos::getCategory)).forEach((category, quadrinhos) -> System.out.println(category + " " + quadrinhos));
-
-        System.out.println("-------------------------");
-
-        Map<Category, List<Quadrinhos>> collect = quadrinhosList.stream().collect(Collectors.groupingBy(Quadrinhos::getCategory));
+        Map<Category, Long> collect = quadrinhosList.stream().collect(groupingBy(Quadrinhos::getCategory, Collectors.counting()));
         System.out.println(collect);
+
+        quadrinhosList
+                .stream()
+                .collect(groupingBy(Quadrinhos::getCategory,
+                                    Collectors.maxBy(Comparator.comparing(Quadrinhos::getPrice))))
+                .forEach((category, quadrinhos) -> System.out.println(category + " " + quadrinhos.get()));
+
     }
 }

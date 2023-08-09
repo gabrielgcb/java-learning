@@ -1,15 +1,20 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.teste;
 
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Category;
+import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Quadrinhos;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class StreamTeste12 {
+import static academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion.*;
+import static java.util.stream.Collectors.groupingBy;
+
+public class StreamTeste13 {
     private static final List<Quadrinhos> quadrinhosList = Arrays.asList(
             new Quadrinhos("O Espetacular Homem-Aranha", 9.99, Category.DRAMA),
             new Quadrinhos("Quarteto Fantástico", 11.49, Category.FANTASY),
@@ -21,12 +26,21 @@ public class StreamTeste12 {
     );
 
     public static void main(String[] args) {
+        Map<Object, List<Quadrinhos>> collect = quadrinhosList
+                .stream()
+                .collect(groupingBy(quadrinhos ->
+                        quadrinhos.getPrice() < 10 ? UNDER_PROMOTION : NORMAL_PRICE)
+                );
 
-        quadrinhosList.stream().collect(Collectors.groupingBy(Quadrinhos::getCategory)).forEach((category, quadrinhos) -> System.out.println(category + " " + quadrinhos));
-
-        System.out.println("-------------------------");
-
-        Map<Category, List<Quadrinhos>> collect = quadrinhosList.stream().collect(Collectors.groupingBy(Quadrinhos::getCategory));
         System.out.println(collect);
+
+        System.out.println("----------------------------");
+
+        Map<Category, Map<Promotion, List<Quadrinhos>>> collect1 = quadrinhosList
+                .stream()
+                .collect(groupingBy(Quadrinhos::getCategory, groupingBy(quadrinhos -> quadrinhos.getPrice() < 10 ? UNDER_PROMOTION : NORMAL_PRICE)
+                ));
+
+        System.out.println(collect1);
     }
 }
